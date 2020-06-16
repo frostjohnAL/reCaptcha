@@ -27,14 +27,21 @@ Update public key from the Arkose dashboard
 #### Private Key
 Update `secret key` to the Arkose Labs `private key` located in your [dashboard](https://dashboard.arkoselabs.com/)
 
+
 #### Replace parameter
 `g-recaptcha-response` becomes the `Session_token`ie verification
+
 
 #### Update POST URL
 Make a POST request to the Verify Endpoint and include a session token containing the value of the response.token from the response object.
 
-eg
-https://www.google.com/recaptcha/api/siteverify to https://verify-api.arkoselabs.com/api/v3/verify/
+```sh
+https://www.google.com/recaptcha/api/siteverify
+``` 
+to 
+```sh
+https://verify-api.arkoselabs.com/api/v3/verify/
+```
 
 
 
