@@ -14,6 +14,10 @@ Your keys which will be shown in the dashboard.arkoselabs.com for both public an
 ## Client Side Integration
 ```sh
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+```
+to 
+```sh
+<script src="//client-api.arkoselabs.com/v2/INSERT_PUBLIC_KEY/api.js" data-callback="setupEnforcement" async defer></script>
 <script>
    
     function setupEnforcement(myEnforcement) {
@@ -31,10 +35,6 @@ Your keys which will be shown in the dashboard.arkoselabs.com for both public an
     }
 
   </script>
-```
-to 
-```sh
-<script src="//client-api.arkoselabs.com/v2/INSERT_PUBLIC_KEY/api.js" data-callback="setupEnforcement" async defer></script>
 ```
 Update public key from the Arkose dashboard
 
