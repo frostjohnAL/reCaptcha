@@ -14,6 +14,23 @@ Your keys which will be shown in the dashboard.arkoselabs.com for both public an
 ## Client Side Integration
 ```sh
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script>
+   
+    function setupEnforcement(myEnforcement) {
+      
+      myEnforcement.setConfig({
+        
+        selector: '#enforcement-trigger',
+        
+        onCompleted: function(response) {
+          
+          var token = response.token.toString();
+
+        }
+      });
+    }
+
+  </script>
 ```
 to 
 ```sh
